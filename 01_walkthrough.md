@@ -90,9 +90,85 @@ var y = 2;
 var z = x * y;
 console.log(z);
 ```
+##### Inline JS versus externem file
+
+Dieser Block kann innerhalb einer HTML Seite an einem beliebigem Ort eingefügt werden.
+```
+<script type="text/javascript">
+  window.alert("test");
+</script>
+```
+
+Übersichtlicher ist es aber, den Javascript Code in einem JS File abzuspeichern und es aus dem HTML File aufzurufen (hier haben wir den Javascript Code in einem index.js gespeichert):
+
+```
+<script type="text/javascript" src="js/index.js"></script>
+```
+
+##### Funktionen
+Eine JavaScript-Funktion ist ein Codeblock, um eine bestimmte Aufgabe (meist repititve) auszuführen.
+
+Eine JavaScript-Funktion wird erst ausgeführt, wenn man sie direkt aufruft (achtung Gross/Kleinschreibung). Die zwei Variablen in den Klammern nennt man Parameter. Möchte man die Funktion aufrufen, muss man immer exakt dieselbe Anzahl an Parametern übergeben.
+
+Eine JavaScript - Funktion wird mit dem Schlüsselwort **function**, gefolgt von einem Namen, gefolgt von Klammern () erstellt.
+
+Funktionsnamen können Buchstaben, Ziffern Unterstrichen enthalten (gleichen Regeln wie Variablen).
+
+Die Klammern können durch Komma getrennte Parameternamen enthalten:
+( Parameter1, Parameter2, ... )
+
+Der Code welcher durch Funktion ausgeführt werden soll, ist in geschweiften Klammern gesetzt: {}
+
+```
+function meineFunktion(p1, p2) {
+    return p1 * p2; // Gibt die Multiplikation von p1 und p2 zurück
+}
+
+var ergebnis = meineFunktion(3,9);
+console.log(ergebnis);
+console.log(meineFunktion(4,4));
+```
+
+Versuche eine Funktion zu erstellen, die Celsius in Fahrenheit umwandelt und/oder umgekehrt.
+
+##### Funktionen Scopes
+
+Variablen, die innerhalb einer Funktion deklariert werden, sind lokale Variablen.
+
+Lokale Variablen haben einen lokalen Gültigkeitsbereich -> Sie können nur innerhalb der Funktion zugegriffen werden.
+
+```
+// code here can not use carName
+
+function myFunction() {
+    var carName = "Tesla";
+    console.log(carName);
+    // code here can use carName
+
+}
+```
+
+Globale Variablen sind Variablen, die ausserhalb einer Funktion deklariert werden. Eine globale Variable hat globale Reichweite: Alle Skripten und Funktionen einer Webseite können auf sie zugreifen.
+
+```
+var carName = "Tesla";
+
+// code here can use carName
+
+function myFunction() {
+
+    // code here can use carName
+
+}
+```
+
+#### Tools
+[Atom text editor](https://atom.io)
 
 #### Weiterführende Links
 [JS intro w3schools](https://www.w3schools.com/js/default.asp)
+[Javascript Book](http://javascriptbook.com/)
+[]()
 
 #### Aufgaben
 
