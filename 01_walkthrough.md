@@ -162,13 +162,65 @@ function myFunction() {
 }
 ```
 
+##### Kontroll Strukturen
+
+Wie in anderen Sprachen, kann man in Javascript bedingte Anweisungen (if elseif etc.), sowie verzweigte Anweisungen und Schleifen (Loops) sehr einfach erstellen.
+
+Hier eine kurze Auswahl an gebräuchlichen Kontrollstrukturen:
+
+###### Bedingte Anweisung if
+
+```
+var isIpad = true;
+if (isIpad == true) {
+  // your code here
+}
+else {
+  // wenn variable nicht true ist
+}
+```
+###### Verzweigte Anweisung switch
+
+```
+var text = "pizza";
+
+switch (text) {
+  case "napoli":
+    console.log("napoli + mozzarella");
+  break;
+  case "rucola":
+    console.log("vegetarian rucola");
+  break;
+  case "margharita":
+    console.log("cheapest");
+  break;
+}
+```
+
+###### For Schleifen
+```
+for (var i=0; i<10; i++) {
+  console.log(i);
+}
+```
+
+###### while Schleifen
+
+var i = 0;
+while (i<10) {
+  console.log(i);
+  i = i + 1;
+}
+
 #### Tools
 [Atom text editor](https://atom.io)
+[Grunt](https://gruntjs.com/)
+[NodeJs](https://nodejs.org/en/)
 
 #### Weiterführende Links
 [JS intro w3schools](https://www.w3schools.com/js/default.asp)
 [Javascript Book](http://javascriptbook.com/)
-[]()
+[Frontend developer handbook](https://www.frontendhandbook.com/)
 
 #### Aufgaben
 
@@ -178,7 +230,6 @@ Erzeuge die Variable, damit der untenstehende Code ausgeführt werden kann.
 
 <script>
 // Create the variables here
-
 document.getElementById("demo").innerHTML =
 firstName + " " + lastName + " is " + age;
 </script>
