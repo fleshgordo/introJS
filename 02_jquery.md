@@ -240,7 +240,7 @@ Und sliding Effekte
 motion (in the opposite direction to its current state)
 ```
 
-Und spezielle Animation:
+Und spezielle Animationen:
 ```
 .delay()  // Delays execution of subsequent items in queue
 .stop() // Stops an animation if it is currently running

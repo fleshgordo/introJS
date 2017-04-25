@@ -61,6 +61,10 @@ var isIpad = true;
 // undefined
 var dada;
 console.log(dada);
+
+// Objekte und arrays
+var objekt = { x: 12, y: 15};
+var zahlenreihe = [1,2,3];
 ```
 
 Einmal als Variable gespeichert, können diese Container nun wiederverwendet werden:
@@ -72,7 +76,26 @@ var total = preis1 + preis2;
 console.log(total);
 ```
 
-Arithmetik versus Zeichenketten aneinanderhänderungen
+Die Wahl des Variablennamen ist einem freigestellt. Einzig folgende Wörter dürfen nicht verwendet werden:
+
+```
+abstract arguments  boolean  break  byte
+case	 catch     char        class      const
+continue debugger  default     delete     do
+double   else      enum        eval       export
+extends  false     final       finally    float
+for      function  goto        if         implements
+import   in        instanceof  int        interface
+let      long      native      new        null
+package  private   protected   public     return
+short    static    super       switch     synchronized
+this     throw     throws      transient  true
+try      typeof    var         void       volatile
+while    with      yield
+```
+**JavaScript unterscheidet zwischen Gross- und Kleinschreibung**: Aa, aa, AA und aA bezeichnen unterschiedliche Variablen!
+
+Arithmetik versus Zeichenketten aneinanderhängen
 
 ```
 var x = 5 + 2 + 3;
@@ -216,6 +239,10 @@ while (i<10) {
 [Atom text editor](https://atom.io)
 [Grunt](https://gruntjs.com/)
 [NodeJs](https://nodejs.org/en/)
+[Htmlshell](http://htmlshell.com/)
+[Good HTML practices to follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
+[Initalizer](http://www.initializr.com/)
+[ish by Brad Frost](http://bradfrost.com/demo/ish/)
 
 #### Weiterführende Links
 [JS intro w3schools](https://www.w3schools.com/js/default.asp)
