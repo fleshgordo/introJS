@@ -192,7 +192,7 @@ $('p').on('click', function() {
 
 Hier eine Auflistung der Events, welche mit jQuery detektiert werden können:
 
- - **UI focus** , blur, change
+ - **UI focus** blur, change
  - **KEYBOARD** input, keydown, keyup, keypress
  - **MOUSE** click, dblclick, mouseup, mousedown, mouseover, mousemove, mouseout, hover
  - **FORM** submit, select, change
@@ -211,7 +211,7 @@ $('p').on('click' function(e)
 
 Seht euch die Eigenschaften und Methoden von e an. Es gibt eine Methode, die preventDefault() heisst, welche die normale Ausführung einer Interaktion verhindert (z. B. submit von einem Formular).
 
-Versuche die Interaktion mit einem Element über den mouseover und mouseover Event Trigger zu gestalten. Was muss man dabei beachten?
+Versuche die Interaktion mit einem Element über den mouseover und mouseout Event Trigger zu gestalten. Was muss man dabei beachten?
 
 ## Animation und Sichtbarkeit von Elementen
 
