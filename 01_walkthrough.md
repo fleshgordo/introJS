@@ -236,21 +236,21 @@ while (i<10) {
 }
 
 #### Tools
-[Atom text editor](https://atom.io)
-[Grunt](https://gruntjs.com/)
-[NodeJs](https://nodejs.org/en/)
-[Htmlshell](http://htmlshell.com/)
-[Good HTML practices to follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
-[Initalizer](http://www.initializr.com/)
-[ish by Brad Frost](http://bradfrost.com/demo/ish/)
+ - [Atom text editor](https://atom.io)
+ - [Grunt](https://gruntjs.com/)
+ - [NodeJs](https://nodejs.org/en/)
+ - [Htmlshell](http://htmlshell.com/)
+ - [Good HTML practices to follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
+ - [Initalizer](http://www.initializr.com/)
+ - [ish by Brad Frost](http://bradfrost.com/demo/ish/)
 
 #### Weiterführende Links
-[JS intro w3schools](https://www.w3schools.com/js/default.asp)
-[Javascript Book](http://javascriptbook.com/)
-[Frontend developer handbook](https://www.frontendhandbook.com/)
-[You don't know JS](https://github.com/getify/You-Dont-Know-JS)
-[Programming Design Systems Buch](https://programmingdesignsystems.com/introduction/)
-[Two JS book recommendations](https://tommcfarlin.com/recommended-javascript-books/)
+ - [JS intro w3schools](https://www.w3schools.com/js/default.asp)
+ - [Javascript Book](http://javascriptbook.com/)
+ - [Frontend developer handbook](https://www.frontendhandbook.com/)
+ - [You don't know JS](https://github.com/getify/You-Dont-Know-JS)
+ - [Programming Design Systems Buch](https://programmingdesignsystems.com/introduction/)
+ - [Two JS book recommendations](https://tommcfarlin.com/recommended-javascript-books/)
 
 #### Aufgaben
 
