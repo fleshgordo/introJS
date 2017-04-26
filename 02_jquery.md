@@ -246,3 +246,15 @@ Und spezielle Animationen:
 .stop() // Stops an animation if it is currently running
 .animate() // Creates custom animations
 ```
+
+## Automatisiertes Scrollen
+
+```
+$(document).ready(function() {
+   $("body, html").animate({"scrollTop": $("#block").scrollTop()},2000);
+});
+```
+
+Es gibt aber auch ein Plugin, dass einem die Arbeit und das Umrechnen ein wenig abnehmen kann.
+
+http://stackoverflow.com/questions/6677035/jquery-scroll-to-element

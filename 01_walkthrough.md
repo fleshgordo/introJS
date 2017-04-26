@@ -248,6 +248,9 @@ while (i<10) {
 [JS intro w3schools](https://www.w3schools.com/js/default.asp)
 [Javascript Book](http://javascriptbook.com/)
 [Frontend developer handbook](https://www.frontendhandbook.com/)
+[You don't know JS](https://github.com/getify/You-Dont-Know-JS)
+[Programming Design Systems Buch](https://programmingdesignsystems.com/introduction/)
+[Two JS book recommendations](https://tommcfarlin.com/recommended-javascript-books/)
 
 #### Aufgaben
 
