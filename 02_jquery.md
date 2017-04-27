@@ -155,10 +155,8 @@ Aufgabe: jeder zweite Absatz soll geändert werden. Tipp :odd bedeutet alle unge
 Wir können auch direkt über jQuery auf die CSS-Eigenschaften zugreifen. Wollen wir beispielsweise alle p in rot anzeigen, funktioniert das über
 die css() Funktion:
 ```
-$('p').css('backgroundColor', 'rot');
+$('p').css('background-color', 'rot');
 ```
-
-Man muss aber aufpassen: Die ursprüngliche CSS Eigenschaft heisst background-color. Der Bindestrich geht verloren, sowie das c von color wird plötzlich gross geschrieben.
 
 Allerdings sollte man nicht CSS direkt in jQuery einbauen, da die Wartung sehr schnell sehr unübersichtlich wird. Die richtige Vorgehensweise ist, dass man die Designanweisungen von dem CSS File nimmt. Dies geschieht so z. B. in der CSS Datei definiert man eine Klasse:
 
@@ -186,7 +184,7 @@ Sobald der User mit der Website interagiert, werden gewisse Events getriggert. M
 
 ```
 $('p').on('click', function() {
-  $(this).addClass('fehler');
+  $(this).toggleClass('fehler');
 });
 ```
 
@@ -245,6 +243,12 @@ Und spezielle Animationen:
 .delay()  // Delays execution of subsequent items in queue
 .stop() // Stops an animation if it is currently running
 .animate() // Creates custom animations
+```
+
+Als weiteren Parameter kann man die Geschwindigkeit der Animation angeben, wie z. B.:
+
+```
+
 ```
 
 ## Automatisiertes Scrollen

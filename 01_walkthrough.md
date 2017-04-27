@@ -240,7 +240,6 @@ while (i<10) {
  - [Grunt](https://gruntjs.com/)
  - [NodeJs](https://nodejs.org/en/)
  - [Htmlshell](http://htmlshell.com/)
- - [Good HTML practices to follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
  - [Initalizer](http://www.initializr.com/)
  - [ish by Brad Frost](http://bradfrost.com/demo/ish/)
 

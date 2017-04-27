@@ -72,14 +72,19 @@ Tools wie [Imageoptim](https://imageoptim.com/) helfen Bilder fürs Web zu optim
 
 ### Validierung
 
-Es gibt verschiedene Tools, um zu checken ob die eigene Seite den Standards entspricht. Hier eine kleine Auflistung:
+Es gibt verschiedene Tools, um zu checken ob die eigene Seite den Standards entspricht und ob die Performance im Vergleich gut ist. Hier eine kleine Auflistung:
 
   - [w3 validator](https://validator.w3.org/)
   - [Google Page Speed Tools](https://developers.google.com/speed/pagespeed/)
+  - [Webpagetest](https://www.webpagetest.org/)
+  - [Can i use?](http://caniuse.com/)
+  - [Browserstack Cross-browser testing](https://www.browserstack.com/)
 
 ### Lerne von Profis
 
 Grosse Firmen mit aufwändigem Frontend-Design veröffentlichen ihre Best practices teilweise, wie z. B.
 
   - [Front End Tips @ Gitbook](https://www.gitbook.com/book/znack/front-end-tips/details)
+  - [Good HTML practices to follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
   - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+  - [Standards for developing flexible, durable, and sustainable HTML and CSS](http://codeguide.co/)
