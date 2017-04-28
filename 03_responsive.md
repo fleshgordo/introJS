@@ -20,9 +20,8 @@ Prinzipiell muss man drei Bestandteile für ein responsive Design identifizieren
 
 In dem Essay von [John Allsopp](https://alistapart.com/article/dao) (2000) beschreibt er die neue Herausforderung an Designer für das neue Medium "Web" zu gestalten.
 
-```
-  The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page. We should embrace the fact that the web doesn’t have the same constraints, and design for this flexibility. But first, we must “accept the ebb and flow of things.”
-```
+> The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page. We should embrace the fact that the web doesn’t have the same constraints, and design for this flexibility. But first, we must “accept the ebb and flow of things.”
+
 
 Dieser Gedanke ist selbst nach 17 Jahren noch aktuell, wenn wir uns vergegenwärtigen wieviele verschiedene Auflösungen und Bildschirmgrössen heutzutage exisitieren.
 
@@ -30,7 +29,7 @@ Dieser Gedanke ist selbst nach 17 Jahren noch aktuell, wenn wir uns vergegenwär
 
 #### Layout Grid
 
-Viele Webseiten basieren auf einer Raster Ansicht, was bedeutet, dass die Seite in Spalten unterteilt sind. Ein Raster hat oft 12 Spalten und eine Gesamtbreite von 100%. Es kann schrumpfen und erweitert werden je nach Browser-Fenster-Grösse.
+Viele Webseiten basieren auf einer Raster Ansicht, welche die Seite in Spalten unterteilt. Ein Raster hat oft 12 Spalten und eine Gesamtbreite von 100%. Es kann schrumpfen und erweitert werden je nach Browser-Fenster-Grösse.
 
 Nehmen wir an, wir arbeiten mit 12 Spalten so ergibt sich eine Rastereinteilung von:
 
@@ -86,6 +85,8 @@ Mediaqueries ist eine CSS-Technik, die mit CSS3 eingeführt worden ist. Mit Hilf
 }
 ```  
 
+Media Queries werden von allen modernen Browser unterstützt. Viele Seiten müssen leider nach wie vor kompatibel mit dem Internet Explorer 8 sein, weshalb einem die Bibliothek [respond.js](https://github.com/scottjehl/Respond) hilfreich sein kann.
+
 In unserem Beispiel mit dem Raster würde man dann beispielsweise die Breite jeder Spalte auf 100% vergrössern, wenn ein Smartphone auf die Seite zugreift:
 
 ```
@@ -114,7 +115,7 @@ Diese Parameter kann man nun auch miteinander verbinden:
 @media screen and (min-device-width: 480px) and (orientation: landscape) { … }
 ```
 
-Ein weitere wichtige Erweiterung mit dem Aufkommen von Smartphone Browsern war, dass man den Browser Zoom und die tatsächliche Grösse des Smartphone Screens über einen Meta Tag in der <head> Section einer Seite kontrollieren konnte. Typischerweise sollte eure Seite folgendes beinhalten:
+Ein weitere wichtige Erweiterung mit dem Aufkommen von Smartphone Browsern war, dass der Browser Zoom und die tatsächliche Grösse des Smartphone Screens je nach Seite stark varieren. Das Darstellungsfeld variiert mit dem Gerät, und wird auf einem Mobiltelefon kleiner sein als auf einem Computerbildschirm. Über einen Meta Tag in der <head> Section kann man dies aber kontrollieren. Typischerweise sollte eure Seite folgendes beinhalten:
 
 ```
 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -160,7 +161,7 @@ video {
 }
 ```
 
-#### Beste Vorgehensweise?
+#### Beste Vorgehensweise im Responsive Design?
 
 Es gibt verschiedene Stimmen, die behaupten man muss mittlerweile das Webdesign immer mit dem Fokus "mobile First" gestalten und programmieren. Die Realität ist, dass es keine allgemeine Formel gibt, sondern dass man immer abschätzen muss
 
@@ -172,3 +173,5 @@ Im Kapitel 4 gibt es noch mehr Infos zu Best Practices.
 ## Parallax
 
 Diesen Effekt trifft man häufig in modernen Webseiten auf und er geht zurück auf die [Mehrfachebenen-Kamera](https://www.youtube.com/watch?v=YdHTlUGN1zw) von Disney Studios in 1937. Durch die Verschiebung einzelner Elemente wird der Eindruck von Räumlichkeit verstärkt. Im Internet ist dieser Effekt vorwiegend als Parallax bekannt. Als Parallaxe bezeichnet man die scheinbare Änderung der Position eines Objektes, wenn der Beobachter seine eigene Position verschiebt.
+
+Man findet
