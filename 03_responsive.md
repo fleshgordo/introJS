@@ -74,6 +74,14 @@ Für die Reihe benötigen wir noch folgende CSS Regel:
 }
 ```
 
+Und zuallerletzt stellen wir der Regel *box-sizing* sicher, dass das die Grösse von Elementen immer die gesamte Breite und Höhe der Elemente enthalten (i. e. es wird das Padding miteinberechnet. Früher war dies nicht der Fall. Mehr Infos [hier](https://www.w3schools.com/css/css3_box-sizing.asp)).
+
+```
+* {
+    box-sizing: border-box;
+}
+```
+
 ##### Media Queries
 
 Mediaqueries ist eine CSS-Technik, die mit CSS3 eingeführt worden ist. Mit Hilfe von Mediaqueries kann man steuern, wie einzelne Elemente bei verschiedenen Auflösungen angezeight werden, z. B.: wenn das Browserfenster kleiner als 800px ist, wird die Hintergrundfarbe geändert:
