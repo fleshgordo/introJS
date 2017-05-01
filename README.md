@@ -15,7 +15,7 @@ Grundlegende Funktionen zu jQuery und dessen Anwendung.
 
 ### Kapitel 3 (03_responsive.md)
 
-Media Queries und Scrolling Effekte wie Parallax (coming soon).
+Media Queries und Scrolling Effekte wie Parallax.
 
 ### Kapitel 4 (04_bestpractice.md)
 

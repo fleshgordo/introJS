@@ -171,7 +171,7 @@ video {
 
 #### Beste Vorgehensweise im Responsive Design?
 
-Es gibt verschiedene Stimmen, die behaupten man muss mittlerweile das Webdesign immer mit dem Fokus "mobile First" gestalten und programmieren. Die Realität ist, dass es keine allgemeine Formel gibt, sondern dass man immer abschätzen muss
+Es gibt verschiedene Stimmen, die behaupten man muss mittlerweile das Webdesign immer mit dem Fokus "mobile First" gestalten und programmieren. Die Realität ist, dass es keine allgemeine Formel gibt, sondern dass man je nach Projekt immer abschätzen muss welche Technologie/Methodologie besser geeignet wäre.
 
 Brad Frost hat eine sehr reiche Übersicht zu dem Thema [Responsive Design](http://bradfrost.com/demo/ish/) zusammengestellt.
 
@@ -182,4 +182,26 @@ Im Kapitel 4 gibt es noch mehr Infos zu Best Practices.
 
 Diesen Effekt trifft man häufig in modernen Webseiten auf und er geht zurück auf die [Mehrfachebenen-Kamera](https://www.youtube.com/watch?v=YdHTlUGN1zw) von Disney Studios in 1937. Durch die Verschiebung einzelner Elemente wird der Eindruck von Räumlichkeit verstärkt. Im Internet ist dieser Effekt vorwiegend als Parallax bekannt. Als Parallaxe bezeichnet man die scheinbare Änderung der Position eines Objektes, wenn der Beobachter seine eigene Position verschiebt.
 
-Man findet
+Hier eine kurze Übersicht von Seiten wo dieser Effekt eingesetzt wird:
+
+  - [Klassisches Beispiel von Parallax mit CSS](http://www.cssscript.com/demo/pure-css-parallax-scrolling-effect/)
+  - [10 years Intacto](http://www.intacto10years.com/index_start.php)
+  -
+
+Parallax wird auch oft in sogenannten "One-page" Webseiten eingesetzt. Hier ein paar Beispiele zu interessanten Projekten, die mit der Idee eines "langen" Scroll experimentieren:
+
+  - [NASA prospect](http://nasaprospect.com/)
+  - [Every last drop](http://everylastdrop.co.uk/)
+  - [Atlantis](http://www.lostworldsfairs.com/atlantis/)
+  - [James Bond vehicles](http://www.evanshalshaw.com/more/bondcars/)
+  - [Gradient's motherfucker](http://prinzhorn.github.io/skrollr/examples/gradientsmotherfucker.html)
+
+### Parallax.js
+
+Als kleine Übung arbeiten wir zunächst mit einer jQuery parallax.js
+
+Parallax.js ist eine jQuery Library mit welcher man den Gyroscope eines Smartphones den Parallax Effekt steuern kann. Wenn parallax.js keine Accelerometer Sensor findet, dann wird die Animation einfach über die Mausposition gesteuert.
+
+### Skrollr
+
+[Skrollr](https://github.com/Prinzhorn/skrollr/tree/master/examples#examples) coming soon.

@@ -245,10 +245,27 @@ Und spezielle Animationen:
 .animate() // Creates custom animations
 ```
 
-Als weiteren Parameter kann man die Geschwindigkeit der Animation angeben, wie z. B.:
+Mit dem letzten Befehl [animate](http://api.jquery.com/animate/) kann man CSS Regeln animieren lassen:
 
 ```
+$("#target").animate({width : "200px"},500);
+```
 
+Achtet auf die geschwungenen Klammern {}. Der zweite Wert definiert die Zeit der Animation in Millisekunden (500ms = 0.5sec).
+
+Man kann gleichzeitig mehrere Regeln verändern:
+```
+$("#target").animate({
+  width : "200px",
+  opacity : 0.5,
+  height: "50px"
+}, 250);
+```
+
+Problematisch wird es manchmal, wenn man eine Animation an einen Event bindet (z.B. mouseover) und dieser mehrere Male hintereinander "feuert" bevor die Animation noch beendet ist. Dazu kann man einfach den Befehl [stop()](https://api.jquery.com/stop/) in die jQuery "Chain" hinzufügen.
+
+```
+$("#target").stop().slideDown(250);
 ```
 
 ## Automatisiertes Scrollen
