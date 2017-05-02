@@ -186,9 +186,10 @@ Hier eine kurze Übersicht von Seiten wo dieser Effekt eingesetzt wird:
 
   - [Klassisches Beispiel von Parallax mit CSS](http://www.cssscript.com/demo/pure-css-parallax-scrolling-effect/)
   - [10 years Intacto](http://www.intacto10years.com/index_start.php)
-  -
+  - [The boat](http://www.sbs.com.au/theboat/)
+  - [Firewatch](http://www.firewatchgame.com/)
 
-Parallax wird auch oft in sogenannten "One-page" Webseiten eingesetzt. Hier ein paar Beispiele zu interessanten Projekten, die mit der Idee eines "langen" Scroll experimentieren:
+Parallax wird auch oft in sogenannten "One-page" Webseiten eingesetzt. Hier ein paar Beispiele zu interessanten Projekten, die mit der Idee eines "langen" Scroll experimentieren (Hinweis: Diese Beispiele verwenden meist nur einen Scrolling Effekt, sprich kein Parallax):
 
   - [NASA prospect](http://nasaprospect.com/)
   - [Every last drop](http://everylastdrop.co.uk/)
@@ -198,10 +199,43 @@ Parallax wird auch oft in sogenannten "One-page" Webseiten eingesetzt. Hier ein 
 
 ### Parallax.js
 
-Als kleine Übung arbeiten wir zunächst mit einer jQuery parallax.js
-
 Parallax.js ist eine jQuery Library mit welcher man den Gyroscope eines Smartphones den Parallax Effekt steuern kann. Wenn parallax.js keine Accelerometer Sensor findet, dann wird die Animation einfach über die Mausposition gesteuert.
+
+Besuche folgende [Seite](http://saloneludico.ch) und sehe Dir das obere Logo auf dem Smartphone und auf dem Desktop an. Hier werden vier verschiedene Ebenen (SVG Files) übereinandergelagert.
+
+Die Implementierung ist sehr einfach. Zunächst muss die Bibliothek im richtigen Ordner liegen und vom index.html referenziert werden:
+
+```
+<script src="js/jquery.parallax.min.js"></script>
+```
+
+Danach muss man im HTML Code vier (oder mehrere) Layer definieren:
+
+```
+<div id="scene">
+  <div class="layer" data-depth="0.00"><img src="layer1.png"></div>
+  <div class="layer" data-depth="0.20"><img src="layer2.png"></div>
+  <div class="layer" data-depth="0.40"><img src="layer3.png"></div>
+  <div class="layer" data-depth="0.60"><img src="layer4.png"></div>
+</div>
+```
+
+Und im Javaskript File fügt man folgendes hinzu:
+
+```
+$(document).ready(function () {
+ var $scene = $('#scene').parallax();
+ $scene.parallax('scalar', 0, 50);
+ $scene.parallax('enable');
+});
+```
+
+Mehr Infos gibts [hier](https://github.com/wagerfield/parallax).
+
+### Stellar.js
+
+Es gibt eine Vielzahl von Plugins und Bibliotheken. [Stellar.js](http://markdalgleish.com/projects/stellar.js/) ist eine Bibliothek, die eine jede Menge an Einstellungsmöglichkeiten für den Parallax Effekt anbietet.
 
 ### Skrollr
 
-[Skrollr](https://github.com/Prinzhorn/skrollr/tree/master/examples#examples) coming soon.
+Es lohnt sich auch einen Blick auf die Beispiele von [Skrollr](https://github.com/Prinzhorn/skrollr/tree/master/examples#examples) zu werfen. Man kann damit sogar SVG Pfade über den Skroll animieren.
