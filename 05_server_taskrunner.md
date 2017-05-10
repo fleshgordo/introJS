@@ -39,13 +39,13 @@ Mit der Tastenkombination **CTRL-C** kann man den Server stoppen.
 
 Mit dem Aufkommen von immer mehr Requirements an Frontend-Code und standardisierten Verfahren kommt es in der Entwicklung von Websiten sehr häufig zu repetitiven Aufgaben. Ihr habt es wahrscheinlich schon selbst gemerkt wie mühsam es ist, ständig ein "frisches" index.html zu schreiben, die Ordner für CSS/JS und für Bilder anzulegen, etc.
 
-Sogenannte Javascript Task Runner, wie z.B. [Gulp](http://gulpjs.com/) oder [Grunt](https://gruntjs.com/) sind so etwas wie die heimlichen Helfer vieler Web-Developer.
+Sogenannte Javascript Task Runner, wie z.B. [Gulp](http://gulpjs.com/) oder [Grunt](https://gruntjs.com/) sind so etwas wie die heimlichen Helfer vieler Web-Developer. Wie bei vielen anderen Entwicklungen bei Web-Technologien, gibt es für diese Taskrunner auch einen Haufen an Tools und jedes Jahr einen neuen Trend. Mittlerweile wird das hier vorgestellte Gulp von [Broccoli](http://broccolijs.com/), [webpack](https://webpack.js.org/) oder einfach nur [npm Skripten](https://docs.npmjs.com/getting-started/what-is-npm) abgelöst. Was mir dabei wichtig ist, dass man das Prinzip dieser Tools verstehen soll und dabei ist es egal mit welchen man von diesen Tools anfängt. Das Prinzip bleibt gleich, einzig die Syntax ändert sich.
 
 ### Gulp
 
 #### Installation von nodejs
 
-Geht auf folgende Seite und lädt das pkg File für euer Betriebssystem herunter (am besten die Version "recommended for most users"). Nach der erfolgreichen Installation, öffnet einen Terminal und tippt:
+Geht auf folgende [Seite](https://nodejs.org/en/) und lädt das pkg File für euer Betriebssystem herunter (am besten die Version "recommended for most users"). Nach der erfolgreichen Installation, öffnet einen Terminal und tippt:
 
 ```
 node -v
@@ -137,14 +137,17 @@ favicon.ico          index.html           styles
 fonts                robots.txt
 ```
 
+Der Folder **app** ist sozusagen der Ort wo man die Source Files zum Projekt hat. Sobald man im Terminal folgendes tippt,
 
+```
+gulp build
+```
+
+wird ein **dist** (Abkürzung für Distribution) Folder erstellt, wo u. a. die Bilder komprimiert werden, das SASS file in ein einziges CSS File "kompiliert" wird, genauso wie alle Javascript Files komprimiert und minifiziert werden. Typischerweise wird der dist Folder dann automatisiert auf den Fileserver hochgeladen.
 
 ### Live Server
 
-
-### Bower
-
-coming soon.
+Der Live Server überwacht eure Source Files und nach jedem Mal speichern, führt dieser automatisch einen Browser-Referesh durch.
 
 ### SASS
 
@@ -211,3 +214,21 @@ div.one {
   transition: background-color 1s;
 }
 ```
+
+### Bower
+
+Bower ist ein Paketmanager. Im Unterschied zu Grunt geht es bei Bower nicht um die Automatisierung der Abarbeitung von Aufgaben, sondern um die automatisierte Verwaltung von JavaScript Bibliotheken. Bower ist ebenfalls ein Node.js Modul und benötigt wie Grunt eine Konfigurationsdatei, in diesem Fall ein „Bower File“ (bower.json), in dem alle Anweisungen stehen. Bei einer Website bestehen im Frontend Bereich meistens Abhängigkeiten zu bestimmten JavaScript Bibliotheken und Frameworks wie Bootstrap.
+
+Anstatt das zip File von einer z. B. jQuery Bibliothek von der Seite des Entwicklers herunterzuladen, verwaltet Bower die Installation diverser Bibliotheken über das Kommandozeilen-Interface.
+
+```
+bower install jquery
+```
+
+Man kann nach Bibliotheken suchen, wie z. B.:
+
+```
+bower search parallax
+```
+
+Bower wird langsam von npm, webpack und browserify verdrängt. Liest [hier](https://github.com/bower/bower/issues/2298) weshalb Bower nach wie vor verwendet wird.
