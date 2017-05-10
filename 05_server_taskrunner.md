@@ -217,9 +217,11 @@ div.one {
 
 ### Bower
 
-Bower ist ein Paketmanager. Im Unterschied zu Grunt geht es bei Bower nicht um die Automatisierung der Abarbeitung von Aufgaben, sondern um die automatisierte Verwaltung von JavaScript Bibliotheken. Bower ist ebenfalls ein Node.js Modul und benötigt wie Grunt eine Konfigurationsdatei, in diesem Fall ein „Bower File“ (bower.json), in dem alle Anweisungen stehen. Bei einer Website bestehen im Frontend Bereich meistens Abhängigkeiten zu bestimmten JavaScript Bibliotheken und Frameworks wie Bootstrap.
+[Bower](https://bower.io/) ist ein Paketmanager. Im Unterschied zu Gulp geht es bei Bower nicht um die Automatisierung der Abarbeitung von Aufgaben, sondern um die automatisierte Verwaltung von JavaScript Bibliotheken. Bower ist ebenfalls ein Node.js Modul und benötigt wie Gulp eine Konfigurationsdatei, in diesem Fall ein „Bower File“ (bower.json), in dem alle Anweisungen stehen. Bei einer Website bestehen im Frontend Bereich meistens Abhängigkeiten zu bestimmten JavaScript Bibliotheken und Frameworks wie Bootstrap.
 
 Anstatt das zip File von einer z. B. jQuery Bibliothek von der Seite des Entwicklers herunterzuladen, verwaltet Bower die Installation diverser Bibliotheken über das Kommandozeilen-Interface.
+
+Man kann seinem Projekt einfach über dieses Kommando jQuery hinzufügen. Es lädt die neueste Version aus dem Web und speichert diese automatisch im js Folder.
 
 ```
 bower install jquery
@@ -231,4 +233,6 @@ Man kann nach Bibliotheken suchen, wie z. B.:
 bower search parallax
 ```
 
-Bower wird langsam von npm, webpack und browserify verdrängt. Liest [hier](https://github.com/bower/bower/issues/2298) weshalb Bower nach wie vor verwendet wird.
+In der [Anleitung](https://bower.io/docs) zu Bower findet man noch viel mehr Kommandos.
+
+Bower wird aber langsam von npm, [webpack](https://webpack.js.org/) und [browserify](http://browserify.org/) verdrängt. Liest [hier](https://github.com/bower/bower/issues/2298) weshalb Bower nach wie vor verwendet wird.
