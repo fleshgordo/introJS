@@ -97,6 +97,13 @@ Es gibt einen Haufen an sogenannten Generatoren für Yeoman. Wir sehen uns zunä
 npm install -g generator-webapp
 ```
 
+Installiere bower
+
+```
+npm install –g bower
+bower install
+```
+
 Mit dem Befehl **yo doctor** könnt ihr überprüfen, ob alles geklappt hat.
 
 Nun versucht im Terminal den Ordner auf den Desktop zu wechseln.
