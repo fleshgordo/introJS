@@ -69,6 +69,10 @@ bash: command not found: node
 Gulp kann man über den Packet-Manager von nodejs installieren. Das Kommando im Terminal heisst diesbezüglich *npm*. Führt bitte beide Kommandos jeweils einzeln aus.
 
 ```
+npm config set prefix /usr/local
+```
+
+```
 sudo npm install –g gulp
 sudo npm install -g yo
 ```
