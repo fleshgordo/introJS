@@ -94,7 +94,7 @@ Das -g nennt man Flag und bedeutet das gulp "global" installiert werden soll. De
 Es gibt einen Haufen an sogenannten Generatoren für Yeoman. Wir sehen uns zunächst nur den Web Generator an. Wie auch alles andere, muss man diesen zunächst erst installieren.
 
 ```
-sudo npm install -g generator-webapp
+npm install -g generator-webapp
 ```
 
 Mit dem Befehl **yo doctor** könnt ihr überprüfen, ob alles geklappt hat.
