@@ -73,8 +73,8 @@ npm config set prefix /usr/local
 ```
 
 ```
-sudo npm install –g gulp
-sudo npm install -g yo
+sudo npm install gulp –g
+sudo npm install yo -g 
 ```
 
 Das -g nennt man Flag und bedeutet das gulp "global" installiert werden soll. Der zweite Befehl installiert [yeoman](http://yeoman.io/), ein weiteres Tool, welches unsere Arbeit erleichtern soll.
