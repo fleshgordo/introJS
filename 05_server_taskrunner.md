@@ -69,6 +69,10 @@ bash: command not found: node
 Gulp kann man über den Packet-Manager von nodejs installieren. Das Kommando im Terminal heisst diesbezüglich *npm*. Führt bitte beide Kommandos jeweils einzeln aus.
 
 ```
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+```
+
+```
 npm config set prefix /usr/local
 ```
 
@@ -77,13 +81,13 @@ sudo npm install -g npm
 ```
 
 ```
-sudo npm install gulp –g
-sudo npm install yo -g
+npm install gulp –g
+npm install yo -g
 ```
 
 ```
-sudo npm install –g gulp
-sudo npm install -g yo
+npm install –g gulp
+npm install -g yo
 ```
 
 Das -g nennt man Flag und bedeutet das gulp "global" installiert werden soll. Der zweite Befehl installiert [yeoman](http://yeoman.io/), ein weiteres Tool, welches unsere Arbeit erleichtern soll.
