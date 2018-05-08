@@ -38,7 +38,7 @@ var x = 5;   // I will be executed
   ':::::::::'
     ':::::'
       ':'
-/*
+*/
 ```
 ##### Variablen
 
