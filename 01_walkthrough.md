@@ -25,7 +25,7 @@ Nicht alle JavaScript-Anweisungen werden „ausgeführt“.
 Code nach doppelten Schrägstrichen // oder zwischen / * und * / wird als  Kommentar behandelt.
 
 Kommentare werden ignoriert und nicht ausgeführt:
-```
+```javascript
 var x = 5;   // I will be executed
 
 // var x = 6;   I will NOT be executed
@@ -44,7 +44,7 @@ var x = 5;   // I will be executed
 
 JavaScript Variablen sind Container für Datenwerte zu speichern.
 
-```
+```javascript
 // Ganzzahl
 var jahr = 2017;
 
@@ -69,7 +69,7 @@ var zahlenreihe = [1,2,3];
 
 Einmal als Variable gespeichert, können diese Container nun wiederverwendet werden:
 
-```
+```javascript
 var preis1 = 9;
 var preis2 = 6;
 var total = preis1 + preis2;
@@ -97,7 +97,7 @@ while    with      yield
 
 Arithmetik versus Zeichenketten aneinanderhängen
 
-```
+```javascript
 var x = 5 + 2 + 3;
 var x = "Hello" + " " + " world!";
 
@@ -107,7 +107,7 @@ var x = "5" + 2 + 3;
 
 Multiplikation, Subtraktion, etc
 
-```
+```javascript
 var x = 5;
 var y = 2;
 var z = x * y;
@@ -116,7 +116,7 @@ console.log(z);
 ##### Inline JS versus externem file
 
 Dieser Block kann innerhalb einer HTML Seite an einem beliebigem Ort eingefügt werden.
-```
+```javascript
 <script type="text/javascript">
   window.alert("test");
 </script>
@@ -124,7 +124,7 @@ Dieser Block kann innerhalb einer HTML Seite an einem beliebigem Ort eingefügt 
 
 Übersichtlicher ist es aber, den Javascript Code in einem JS File abzuspeichern und es aus dem HTML File aufzurufen (hier haben wir den Javascript Code in einem index.js gespeichert):
 
-```
+```javascript
 <script type="text/javascript" src="js/index.js"></script>
 ```
 
@@ -142,7 +142,7 @@ Die Klammern können durch Komma getrennte Parameternamen enthalten:
 
 Der Code welcher durch Funktion ausgeführt werden soll, ist in geschweiften Klammern gesetzt: {}
 
-```
+```javascript
 function meineFunktion(p1, p2) {
     return p1 * p2; // Gibt die Multiplikation von p1 und p2 zurück
 }
@@ -160,7 +160,7 @@ Variablen, die innerhalb einer Funktion deklariert werden, sind lokale Variablen
 
 Lokale Variablen haben einen lokalen Gültigkeitsbereich -> Sie können nur innerhalb der Funktion zugegriffen werden.
 
-```
+```javascript
 // code here can not use carName
 
 function myFunction() {
@@ -173,7 +173,7 @@ function myFunction() {
 
 Globale Variablen sind Variablen, die ausserhalb einer Funktion deklariert werden. Eine globale Variable hat globale Reichweite: Alle Skripten und Funktionen einer Webseite können auf sie zugreifen.
 
-```
+```javascript
 var carName = "Tesla";
 
 // code here can use carName
@@ -193,7 +193,7 @@ Hier eine kurze Auswahl an gebräuchlichen Kontrollstrukturen:
 
 ###### Bedingte Anweisung if
 
-```
+```javascript
 var isIpad = true;
 if (isIpad == true) {
   // your code here
@@ -204,7 +204,7 @@ else {
 ```
 ###### Verzweigte Anweisung switch
 
-```
+```javascript
 var text = "pizza";
 
 switch (text) {
@@ -221,7 +221,7 @@ switch (text) {
 ```
 
 ###### For Schleifen
-```
+```javascript
 for (var i=0; i<10; i++) {
   console.log(i);
 }
@@ -229,11 +229,13 @@ for (var i=0; i<10; i++) {
 
 ###### while Schleifen
 
+```javascript
 var i = 0;
 while (i<10) {
   console.log(i);
   i = i + 1;
 }
+```
 
 #### Tools
  - [Atom text editor](https://atom.io)
