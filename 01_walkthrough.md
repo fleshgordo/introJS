@@ -12,7 +12,7 @@ JavaScript ist eine (interpretierte) Programmiersprache (sie wird nicht kompilie
 
 JavaScript - Statements werden durch Semikolons getrennt.
 
-```
+```js
 var x, y, z;
 x = 5;
 y = 6;
@@ -78,7 +78,7 @@ console.log(total);
 
 Die Wahl des Variablennamen ist einem freigestellt. Einzig folgende Wörter dürfen nicht verwendet werden:
 
-```
+```js
 abstract arguments  boolean  break  byte
 case	 catch     char        class      const
 continue debugger  default     delete     do
@@ -253,7 +253,7 @@ while (i<10) {
  - [Programming Design Systems Buch](https://programmingdesignsystems.com/introduction/)
  - [Two JS book recommendations](https://tommcfarlin.com/recommended-javascript-books/)
 
-#### Aufgaben
+#### Aufgabe
 
 Erzeuge die Variable, damit der untenstehende Code ausgeführt werden kann.
 ```
