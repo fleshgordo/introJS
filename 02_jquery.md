@@ -21,6 +21,8 @@ Die Einbindung über einen Google Server würde wiefolgt aussehen:
   type="text/javascript"></script>
 ```
 
+Mehr Infos zum Laden via einen CDN Server [hier](https://developers.google.com/speed/libraries#jquery)
+
 ## Das jQuery Objekt oder $
 
 Als „typisch“ für jQuery gilt das $-Zeichen im Code. Es handelt sich dabei um gewöhnliches JavaScript. So ist unter anderem auch das $-Zeichen als Namensbestandteil erlaubt. Und genau davon macht jQuery Gebrauch. Das Framework fügt dem window Objekt eine globale Funktion und ein globales Objekt mit dem Namen $ hinzu. Über die globale jQuery-Funktion $() ist der Zugriff auf das HTML-Dokument möglich.
