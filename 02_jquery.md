@@ -9,7 +9,7 @@ Auch die zahlreichen, teils mächtigen Plugins tragen zum Erfolg von jQuery bei.
 ## Einbindung
 
 Man kann jQuery wahlweise herunterladen und dann wieder auf Ihren eigenen Web-Space hochladen, damit es Webseiten von dort aus lokal laden. Die Alternative ist, jQuery direkt über einen hochverfügbaren Google-Server einzubinden.
-```
+```js
 <script src="/scripts/jquery/jquery-1.11.0.min.js"
 type="text/javascript"></script>
 ```
