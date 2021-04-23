@@ -25,7 +25,7 @@ Die Einbindung über einen Google Server würde wiefolgt aussehen:
 
 Als „typisch“ für jQuery gilt das $-Zeichen im Code. Es handelt sich dabei um gewöhnliches JavaScript. So ist unter anderem auch das $-Zeichen als Namensbestandteil erlaubt. Und genau davon macht jQuery Gebrauch. Das Framework fügt dem window Objekt eine globale Funktion und ein globales Objekt mit dem Namen $ hinzu. Über die globale jQuery-Funktion $() ist der Zugriff auf das HTML-Dokument möglich.
 
-```
+```js
 var jetzt = $.now();
 console.log(jetzt);
 ```
@@ -45,7 +45,7 @@ Bevor wir irgend etwas mit irgendwelchen Elementen anstellen können, müssen wi
 
 jQuery spielt seinen Bonus über das Auswählen (selektieren) von Elementen aus. Hier werden alle h1 Elemente innerhalb des HTML Dokuments ausgewählt und ihr Inhalt geändert.
 
-```
+```html
 <html>
 <head>
   <title>jQuery Beispiel</title>
@@ -65,7 +65,7 @@ jQuery spielt seinen Bonus über das Auswählen (selektieren) von Elementen aus.
 
 Man kann aber auch Werte, Attribute und Eigenschaften von Elementen abrufen und verwenden:
 
-```
+```html
 <html>
 <head>
   <title>jQuery Beispiel</title>
@@ -87,27 +87,27 @@ Man kann aber auch Werte, Attribute und Eigenschaften von Elementen abrufen und 
 
 Je komplizierter die Seite wird, desto genauer muss man einzelne Elemente auswählen, indem man direkt auf ihre Klassen und/oder IDs zugreift. Wir wollen nun über jQuery auf IDs und Klassen zugreifen um gezielt Elemente auswählen zu können. Zur Erinnerung an die IDs. Eine ID ist eindeutig und kommt nur einmal pro HTML-Seite vor.
 
-```
+```html
 <p id="absatz1">Erster Absatz</p>
 <p id="absatz2">Zweiter Absatz</p>
 ```
 
 Im Gegensatz zur ID können Klassen bei mehr als einem Element und gleichzeitig bei verschiedenen Elementen eingesetzt werden. Ein Element kann auch mehr als eine Klasse haben.
 
-```
+```html
 <p class="absatz wichtig">
 ```
 Klassenattribute werden bei CSS und jQuery mit einem . (Punkt) angesprochen.
 
 Prinzipiell gibt es unterschiedliche Arten Objekte mit dem jQuery Selektor aufzurufen.
 
-```
+```js
 $("#id")
 $(".klasse")
 $("div, p, a, span, li")
 ```
 
-```
+```html
 <html>
 <head>
   <title>jQuery Beispiel</title>
@@ -144,7 +144,7 @@ Wollen wir nun gezielt eine davon ansprechen, ist dies auch möglich über folge
 
 In der Anwendung sieht das so aus:
 
-```
+```js
 $('.abschnitt:first').text('Text der Klasse abschnitt ersetzt');
 ```
 
@@ -154,25 +154,25 @@ Aufgabe: jeder zweite Absatz soll geändert werden. Tipp :odd bedeutet alle unge
 
 Wir können auch direkt über jQuery auf die CSS-Eigenschaften zugreifen. Wollen wir beispielsweise alle p in rot anzeigen, funktioniert das über
 die css() Funktion:
-```
+```js
 $('p').css('background-color', 'rot');
 ```
 
 Allerdings sollte man nicht CSS direkt in jQuery einbauen, da die Wartung sehr schnell sehr unübersichtlich wird. Die richtige Vorgehensweise ist, dass man die Designanweisungen von dem CSS File nimmt. Dies geschieht so z. B. in der CSS Datei definiert man eine Klasse:
 
-```
+```js
 .fehler { color: red; }
 ```
 
 Mit jQuery kann man nun diese CSS Klasse zuweisen:
 
-```
+```js
 $('p').addClass('fehler');
 ```
 
 Falls man nun diese Klasse wieder entfernen möchte, dann benutzt man die Funktion removeClass():
 
-```
+```js
 $('p').removeClass('fehlerhinweise');
 ```
 
@@ -182,7 +182,7 @@ Das Ganze wird dann interessant, wenn man auf das User-Verhalten reagiert. Wir s
 
 Sobald der User mit der Website interagiert, werden gewisse Events getriggert. Man kann diese Events nun an Elemente "binden"
 
-```
+```js
 $('p').on('click', function() {
   $(this).toggleClass('fehler');
 });
@@ -200,7 +200,7 @@ Hier eine Auflistung der Events, welche mit jQuery detektiert werden können:
 
 Jeder Event Trigger enthält zusätzlich noch Eigenschaften und Funktionen zu dem Event. Dieser wird automatisch der Funktion übergeben:
 
-```
+```js
 $('p').on('click' function(e)
   eventType = e.type;
   console.log(e);
@@ -215,7 +215,7 @@ Versuche die Interaktion mit einem Element über den mouseover und mouseout Even
 
 Man kann mit jQuery auch Effekte auf einzelne Elemente anwenden. So kann man Elemente aus- und einfaden lassen, gänzlich verschwinden oder bewegen lassen. Die Grundfunktionen lauten:
 
-```
+```js
 .show() //  Displays selected elements
 .hide() // Hides selected elements
 .toggle() // Toggles between showing and hiding selected elements
@@ -223,7 +223,7 @@ Man kann mit jQuery auch Effekte auf einzelne Elemente anwenden. So kann man Ele
 
 Folgende "fading" Effekte stehen zur Verfügung
 
-```
+```js
 .fadeIn() // Fades in selected elements making them opaque
 .fadeout() // Fades out selected elements making them transparent
 .fadeTo() // Changes opacity of selected elements
@@ -231,7 +231,7 @@ Folgende "fading" Effekte stehen zur Verfügung
 ```
 
 Und sliding Effekte
-```
+```js
 .slideUp() // Shows selected elements with a sliding motion
 .slideDown() // Hides selected elements with a sliding motion
 .slidedeToggle() // Hides or shows selected elements with a sliding
@@ -239,7 +239,7 @@ motion (in the opposite direction to its current state)
 ```
 
 Und spezielle Animationen:
-```
+```js
 .delay()  // Delays execution of subsequent items in queue
 .stop() // Stops an animation if it is currently running
 .animate() // Creates custom animations
@@ -254,7 +254,7 @@ $("#target").animate({width : "200px"},500);
 Achtet auf die geschwungenen Klammern {}. Der zweite Wert definiert die Zeit der Animation in Millisekunden (500ms = 0.5sec).
 
 Man kann gleichzeitig mehrere Regeln verändern:
-```
+```js
 $("#target").animate({
   width : "200px",
   opacity : 0.5,
@@ -264,13 +264,13 @@ $("#target").animate({
 
 Problematisch wird es manchmal, wenn man eine Animation an einen Event bindet (z.B. mouseover) und dieser mehrere Male hintereinander "feuert" bevor die Animation noch beendet ist. Dazu kann man einfach den Befehl [stop()](https://api.jquery.com/stop/) in die jQuery "Chain" hinzufügen.
 
-```
+```js
 $("#target").stop().slideDown(250);
 ```
 
 ## Automatisiertes Scrollen
 
-```
+```js
 $(document).ready(function() {
    $("body, html").animate({"scrollTop": $("#block").scrollTop()},2000);
 });
