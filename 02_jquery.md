@@ -9,14 +9,14 @@ Auch die zahlreichen, teils mächtigen Plugins tragen zum Erfolg von jQuery bei.
 ## Einbindung
 
 Man kann jQuery wahlweise herunterladen und dann wieder auf Ihren eigenen Web-Space hochladen, damit es Webseiten von dort aus lokal laden. Die Alternative ist, jQuery direkt über einen hochverfügbaren Google-Server einzubinden.
-```js
+```html
 <script src="/scripts/jquery/jquery-1.11.0.min.js"
 type="text/javascript"></script>
 ```
 
 Die Einbindung über einen Google Server würde wiefolgt aussehen:
 
-```
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
   type="text/javascript"></script>
 ```
@@ -32,7 +32,7 @@ console.log(jetzt);
 
 Mit $(document) spricht man das HTML-Dokument als Objekt an. Ein wichtige Methode, die jQuery für das document-Objekt bereit stellt, ist ready(). Es handelt sich um einen Ereignis-Handler. Damit erreicht man, dass der Code erst dann ausgeführt wird, wenn das DOM vollständig geladen ist.
 Vergleiche die beiden Zeitpunkte:
-```
+```js
 // A $( document ).ready() block.
 $( document ).ready(function() {
     console.log( "ready!" );
